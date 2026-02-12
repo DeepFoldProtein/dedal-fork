@@ -1,6 +1,8 @@
 # Dedal: Deep embedding and alignment of protein sequences.
 This package contains all the necessary tools to reproduce the experiments presented in the [dedal paper](https://www.biorxiv.org/content/10.1101/2021.11.15.468653v2).
 
+**Source.** This repository is derived from the [DEDAL implementation](https://github.com/google-research/google-research/tree/master/dedal) in the [google-research](https://github.com/google-research/google-research) repository by Google Research.
+
 ## Install
 To install dedal, it is necessary to clone the google-research repo:
 ```
