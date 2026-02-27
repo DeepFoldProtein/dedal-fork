@@ -15,7 +15,6 @@
 
 """Tests for pairs."""
 import tensorflow as tf
-
 from dedal import pairs as pairs_lib
 
 

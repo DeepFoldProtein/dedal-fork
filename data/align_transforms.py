@@ -16,16 +16,13 @@
 """Transformations for pairwise sequence alignment."""
 
 import collections
-from typing import Dict, Mapping, Optional, Sequence, Tuple, Union
-
-from absl import logging
+from typing import Dict, Union
 
 import gin
 import numpy as np
 import tensorflow as tf
-
-from dedal import pairs
-from dedal import vocabulary
+from absl import logging
+from dedal import pairs, vocabulary
 from dedal.data import transforms
 
 

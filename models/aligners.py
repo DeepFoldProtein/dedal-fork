@@ -15,11 +15,10 @@
 
 """Keras Layers for differentiable local sequence alignment."""
 
-from typing import Optional, Sequence, Tuple, Type, Union
+from typing import Optional, Sequence, Tuple, Type
 
 import gin
 import tensorflow as tf
-
 from dedal import pairs as pairs_lib
 from dedal import smith_waterman
 from dedal.models import initializers

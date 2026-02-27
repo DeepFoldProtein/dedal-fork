@@ -15,13 +15,13 @@
 
 """Implements custom initializers."""
 
-from typing import Any, Dict, Mapping, Optional, Union
+from typing import Union
 
 import gin
 import numpy as np
 import tensorflow as tf
-
 from dedal import vocabulary
+
 
 BLOSUM_62 = """
 A  R  N  D  C  Q  E  G  H  I  L  K  M  F  P  S  T  W  Y  V  B  Z  X  *

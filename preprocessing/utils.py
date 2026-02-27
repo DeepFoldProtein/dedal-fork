@@ -16,11 +16,9 @@
 """Axuiliary functions for Beam pipelines to process Pfam databases."""
 
 import random
-from typing import Iterable, Iterator, Optional
 
 import apache_beam as beam
 from apache_beam import pvalue
-
 from dedal.preprocessing import types
 
 
@@ -185,7 +183,7 @@ class Combinations(beam.PTransform):
 
     pcol = pcol | 'AddKey' >> beam.Map(key_fn)
     paired_pcol = (
-        {suffix: pcol for suffix in self.suffixes}
+        dict.fromkeys(self.suffixes, pcol)
         | 'GroupByKey' >> beam.CoGroupByKey()
         | 'ReshuffleBeforePairing' >> beam.Reshuffle()
         | 'EnumPairs' >> beam.FlatMap(self.yield_unique_pairs))

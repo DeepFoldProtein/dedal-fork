@@ -16,7 +16,6 @@
 """Custom `seqio`-based `FeatureConverter` implementations."""
 
 import enum
-from typing import Mapping
 
 import seqio
 import tensorflow as tf

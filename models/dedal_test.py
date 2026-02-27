@@ -17,14 +17,10 @@
 
 import functools
 
-from absl.testing import parameterized
 import tensorflow as tf
-
+from absl.testing import parameterized
 from dedal import multi_task
-from dedal.models import aligners
-from dedal.models import dedal
-from dedal.models import encoders
-from dedal.models import homology
+from dedal.models import aligners, dedal, encoders, homology
 from dedal.models import nlp as nlp_layers
 
 

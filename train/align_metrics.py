@@ -48,11 +48,10 @@ implemented here:
 
 
 import functools
-from typing import Any, Dict, Mapping, Optional, Sequence, Tuple, Type, Union
+from typing import Mapping, Optional, Sequence, Tuple, Union
 
 import gin
 import tensorflow as tf
-
 from dedal import alignment
 
 

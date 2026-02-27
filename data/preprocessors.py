@@ -15,13 +15,13 @@
 
 """Custom `seqio`-based preprocessors."""
 
-from typing import Mapping, MutableMapping, Optional, Sequence, Union
 
 import seqio
-from t5.data import preprocessors as t5_preprocessors
 import tensorflow as tf
 import tensorflow_text as tf_text
 import typing_extensions
+from t5.data import preprocessors as t5_preprocessors
+
 
 # Type aliases
 PRNGSeeds = tf.Tensor  # `tf.Tensor<int>[N, 2]`, with `N >= 1`.

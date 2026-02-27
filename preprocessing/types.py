@@ -17,6 +17,7 @@
 
 from typing import Dict, Iterable, List, MutableMapping, Tuple, Union
 
+
 # The data preprocessing pipelines for DEDAL operate for the most part on
 # tabular data, with the caveat that values may be scalar or variable-length.
 # Only `bool`, `int`, `float` and `str` types are supported as base types so

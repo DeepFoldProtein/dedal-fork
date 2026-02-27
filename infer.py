@@ -15,14 +15,21 @@
 
 """Run inference of the alignment and provides a wrapper."""
 
+import os
+
+
+# Avoid CUDA_ERROR_UNSUPPORTED_PTX_VERSION on newer GPUs (e.g. Ada) by
+# defaulting to CPU. Set DEDAL_USE_GPU=1 to allow GPU when compatible.
+if os.environ.get("DEDAL_USE_GPU", "0") != "1":
+  os.environ["CUDA_VISIBLE_DEVICES"] = ""
+  # Suppress "failed call to cuInit: CUDA_ERROR_NO_DEVICE" when GPUs are hidden
+  os.environ.setdefault("TF_CPP_MIN_LOG_LEVEL", "3")
+
 import functools
-from typing import Any, Tuple
 
 import numpy as np
 import tensorflow as tf
-
-from dedal import alignment
-from dedal import vocabulary
+from dedal import alignment, vocabulary
 from dedal.data import transforms
 
 
@@ -80,6 +87,9 @@ def expand(inputs):
   expansion = dict()
   for k, v in inputs.items():
     p = k.split('_')[1:]
+    if not p or not p[0].isdigit():
+      # Skip keys like 'output_params' or other non-positional keys
+      continue
     pos = int(p[0])
     if len(p) == 1:
       expansion[pos] = v
@@ -199,6 +209,11 @@ def align(model,
   """
   inputs = preprocess(left, right, max_length)
   output = model(inputs)
-  output = expand(output)
+  # TF Hub / SavedModel may return a dict (e.g. sw_scores, paths, sw_params).
+  # expand() only handles positional keys like output_4_1_1 and returns () otherwise.
+  if isinstance(output, dict) and 'sw_scores' in output and 'paths' in output and 'sw_params' in output:
+    output = (output['sw_scores'], output['paths'], output['sw_params'])
+  else:
+    output = expand(output)
   scores, path, params = postprocess(output, len(left), len(right))
   return Alignment(left, right, scores, path, params)

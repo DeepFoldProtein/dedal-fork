@@ -16,13 +16,12 @@
 """Transformations to be applied on sequences."""
 
 import abc
-from typing import Dict, Optional, Sequence, Tuple, Union
+from typing import Dict, Sequence, Union
 
 import gin
 import tensorflow as tf
+from dedal import pairs, vocabulary
 
-from dedal import pairs
-from dedal import vocabulary
 
 Keys = Union[str, Sequence[str]]
 Example = Dict[str, tf.Tensor]

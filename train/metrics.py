@@ -16,7 +16,6 @@
 """Custom metrics."""
 
 import json
-from typing import Mapping, Optional, Sequence
 
 import gin
 import tensorflow as tf

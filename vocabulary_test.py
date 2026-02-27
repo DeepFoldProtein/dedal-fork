@@ -16,7 +16,6 @@
 """Tests for vocabulary."""
 
 import tensorflow as tf
-
 from dedal import vocabulary
 
 

@@ -16,14 +16,13 @@
 """Implements models to embed biological sequences as vector sequences."""
 
 import functools
-from typing import Optional, Tuple, Type
 
 import gin
 import tensorflow as tf
-
 from dedal import vocabulary
-from dedal.models import activations
-from dedal.models import initializers
+from dedal.models import activations, initializers
+
+
 try:
   # pytype: disable=import-error
   from official.nlp.modeling import layers as nlp_layers  # pylint: disable=g-import-not-at-top

@@ -19,10 +19,9 @@ import itertools
 import os.path
 from typing import Mapping, NamedTuple, Optional, Sequence, Tuple, Type, Union
 
-from absl import logging
 import gin
 import tensorflow.compat.v2 as tf
-
+from absl import logging
 from dedal import multi_task
 from dedal.train import timer
 

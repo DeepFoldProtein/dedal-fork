@@ -19,17 +19,11 @@ import collections
 import functools
 import itertools
 import random
-from typing import Callable, Dict, Iterable, Iterator, Optional
 
 import apache_beam as beam
 import numpy as np
 import tensorflow as tf
-
-from dedal.preprocessing import alignment
-from dedal.preprocessing import schemas
-from dedal.preprocessing import schemas_lib
-from dedal.preprocessing import types
-from dedal.preprocessing import utils
+from dedal.preprocessing import alignment, schemas, schemas_lib, types, utils
 
 
 # Type aliases

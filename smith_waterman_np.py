@@ -15,7 +15,6 @@
 
 """Smith-Waterman functions for protein alignment in NumPy."""
 
-from typing import Optional
 
 import numpy as np
 from scipy import special

@@ -15,9 +15,8 @@
 
 """Tests for lenses."""
 
-from absl.testing import parameterized
 import tensorflow as tf
-
+from absl.testing import parameterized
 from dedal.models import lenses
 
 

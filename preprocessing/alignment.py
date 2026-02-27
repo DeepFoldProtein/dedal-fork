@@ -16,7 +16,6 @@
 """Utilities to manipulate and represent ground-truth alignments as strings."""
 
 import re
-from typing import List, Tuple
 
 
 def alignment_from_gapped_sequences(

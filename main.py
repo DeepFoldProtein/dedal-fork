@@ -36,12 +36,9 @@ python3 -m dedal.main -- \
 
 import os.path
 
-from absl import app
-from absl import flags
-from absl import logging
 import gin
 import tensorflow as tf
-
+from absl import app, flags, logging
 from dedal.train import training_loop
 
 

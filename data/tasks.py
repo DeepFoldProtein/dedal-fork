@@ -16,12 +16,11 @@
 """Defines `seqio.Task`s for DEDAL."""
 
 import functools
-from typing import Callable, Optional, Sequence
+from typing import Callable
 
 import gin
 import seqio
 import tensorflow as tf
-
 from dedal.data import preprocessors
 
 

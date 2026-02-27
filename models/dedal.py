@@ -15,10 +15,10 @@
 
 """Models for alignment tasks."""
 
-from typing import Optional, Sequence, Type, Union
+from typing import Type, Union
+
 import gin
 import tensorflow as tf
-
 from dedal import multi_task
 from dedal import pairs as pairs_lib
 

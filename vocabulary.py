@@ -16,7 +16,6 @@
 """Classes representing vocabularies (alphabets) over protein strings."""
 
 import itertools
-from typing import Iterable, Optional, Set, Sequence, List
 
 import gin
 import tensorflow as tf

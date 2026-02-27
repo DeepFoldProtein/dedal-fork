@@ -15,11 +15,9 @@
 
 """Implements layers for BERT-like pretraining of (protein) language models."""
 
-from typing import Optional
 
 import gin
 import tensorflow as tf
-
 from dedal import vocabulary
 from dedal.models import activations
 

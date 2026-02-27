@@ -17,19 +17,12 @@
 
 import json
 import os
-from typing import Mapping, List, Optional, Sequence, Tuple, Type
 
 import gin
 import numpy as np
 import tensorflow as tf
-
-from dedal import multi_task
-from dedal import vocabulary
-from dedal.data import align_transforms
-from dedal.data import builder
-from dedal.data import loaders
-from dedal.data import serialization
-from dedal.data import transforms
+from dedal import multi_task, vocabulary
+from dedal.data import align_transforms, builder, loaders, serialization, transforms
 
 
 TAPE_SPECS = {

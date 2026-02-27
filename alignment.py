@@ -19,6 +19,7 @@ from typing import Sequence, Tuple, Union
 
 import tensorflow as tf
 
+
 # Type aliases
 PackedSWParams = tf.Tensor
 UnpackedSWParams = Tuple[tf.Tensor, tf.Tensor, tf.Tensor]

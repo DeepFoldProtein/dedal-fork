@@ -21,15 +21,10 @@ import bisect
 import collections
 import copy
 import functools
-from typing import Callable, Iterable, Iterator, List
+from typing import Iterable, List
 
 import apache_beam as beam
-
-from dedal.preprocessing import schemas
-from dedal.preprocessing import schemas_lib
-from dedal.preprocessing import stockholm_lib
-from dedal.preprocessing import types
-from dedal.preprocessing import utils
+from dedal.preprocessing import schemas, schemas_lib, stockholm_lib, types, utils
 
 
 # Type aliases

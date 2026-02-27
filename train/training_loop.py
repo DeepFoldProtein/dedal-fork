@@ -17,17 +17,15 @@
 
 import enum
 import itertools
-from typing import Iterator, Mapping, Optional, Sequence, Tuple, Type, Union
+from typing import Mapping, Union
 
-from absl import logging
 import gin
 import tensorflow as tf
 import tensorflow_datasets as tfds
-
-from dedal import multi_task
+from absl import logging
 from dedal.data import builder
-from dedal.train import checkpoint
-from dedal.train import logger
+from dedal.train import checkpoint, logger
+
 
 Builder = Union[builder.DatasetBuilder, builder.MultiDatasetBuilder]
 Example = Mapping[str, tf.Tensor]

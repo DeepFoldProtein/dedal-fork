@@ -15,11 +15,9 @@
 
 """Tests for the wavefront_tf_ops module."""
 
-from absl.testing import parameterized
 import numpy as np
 import tensorflow as tf
-
-
+from absl.testing import parameterized
 from dedal import alignment
 from dedal import smith_waterman as tf_ops
 from dedal import smith_waterman_np as npy_ops

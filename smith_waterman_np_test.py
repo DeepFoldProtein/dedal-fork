@@ -16,16 +16,13 @@
 """Tests for the NumPy ops."""
 
 import itertools
-from typing import Callable
-from absl.testing import parameterized
 
 import numpy as np
-from scipy import special
-
 import tensorflow as tf
-
+from absl.testing import parameterized
 from dedal import alignment
 from dedal import smith_waterman_np as npy_ops
+from scipy import special
 
 
 # For test purposes.

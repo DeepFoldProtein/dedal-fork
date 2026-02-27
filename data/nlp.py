@@ -15,15 +15,13 @@
 
 """Implements data transforms for pretraining of (protein) LMs."""
 
-from typing import Tuple
 
 import gin
 import tensorflow as tf
-from tensorflow import math
 import tensorflow_probability as tfp
-
 from dedal import vocabulary
 from dedal.data import transforms
+from tensorflow import math
 
 
 @gin.configurable

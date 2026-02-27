@@ -15,18 +15,13 @@
 
 """Keras Layers for homology detection from local sequence alignments."""
 
-from typing import Any, Iterator, Mapping, Tuple, Type
 
 import gin
-import numpy as np
-from scipy import optimize
 import tensorflow as tf
 import tensorflow_datasets as tfds
-
 from dedal import pairs as pairs_lib
 from dedal.data import builder
-from dedal.models import aligners
-from dedal.train import training_loop
+from scipy import optimize
 
 
 @gin.configurable

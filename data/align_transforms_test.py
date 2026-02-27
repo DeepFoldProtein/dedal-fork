@@ -17,7 +17,6 @@
 
 import gin
 import tensorflow as tf
-
 from dedal import vocabulary
 from dedal.data import align_transforms
 

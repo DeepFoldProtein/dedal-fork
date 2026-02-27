@@ -16,12 +16,10 @@
 """Perturbed Smith-Waterman."""
 
 import functools
-from typing import Optional, Tuple, Union
 
 import gin
 import tensorflow as tf
 import tensorflow_probability as tfp
-
 from dedal import alignment
 
 

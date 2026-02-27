@@ -19,10 +19,9 @@ from __future__ import annotations
 
 import dataclasses
 import re
-from typing import Any, Collection, Iterable, Iterator, List, Mapping, Optional, Tuple, Union
+from typing import Any, Mapping
 
 import apache_beam as beam
-
 from dedal.preprocessing import types
 
 

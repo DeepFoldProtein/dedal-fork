@@ -16,7 +16,6 @@
 """Contains auxiliary functions to operator over "paired" tensors."""
 
 
-from typing import Tuple
 
 import tensorflow as tf
 

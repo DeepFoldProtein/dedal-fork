@@ -16,7 +16,6 @@
 """Tests for alignment."""
 
 import tensorflow as tf
-
 from dedal import alignment
 
 

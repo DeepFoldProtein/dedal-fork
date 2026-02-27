@@ -15,7 +15,6 @@
 
 """Layers for contextual lenses."""
 
-from typing import Any, Optional, Sequence
 import gin
 import tensorflow as tf
 

@@ -25,11 +25,12 @@ Different serialization protocols are implemented to perform this conversion.
 """
 
 import json
-from typing import Any, Dict, Mapping, Optional, Sequence, Tuple
+from typing import Dict
 
 import gin
 import numpy as np
 import tensorflow as tf
+
 
 FeaturesDict = Dict[str, tf.Tensor]
 

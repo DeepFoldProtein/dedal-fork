@@ -22,18 +22,11 @@ from unittest import mock
 
 import gin
 import tensorflow as tf
+from dedal import multi_task, vocabulary
+from dedal.data import builder, loaders
+from dedal.models import aligners, dedal, encoders, homology
+from dedal.train import logger, losses, training_loop
 
-from dedal import multi_task
-from dedal import vocabulary
-from dedal.data import builder
-from dedal.data import loaders
-from dedal.models import aligners
-from dedal.models import dedal
-from dedal.models import encoders
-from dedal.models import homology
-from dedal.train import logger
-from dedal.train import losses
-from dedal.train import training_loop
 
 CONFIG_FOLDER = 'configs/'
 open_fn = open

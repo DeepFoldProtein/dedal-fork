@@ -20,9 +20,7 @@ from typing import NamedTuple, Optional, Tuple, Union
 
 import gin
 import tensorflow as tf
-
-from dedal import alignment
-from dedal import multi_task
+from dedal import alignment, multi_task
 
 
 @gin.configurable

@@ -16,7 +16,7 @@
 """Generic Multi task architecture."""
 
 import copy
-from typing import Any, Dict, List, Mapping, Optional, Sequence, Tuple, TypeVar, Generic
+from typing import Generic, TypeVar
 
 import gin
 

@@ -16,7 +16,6 @@
 """Builds a dataset with uniref sequences."""
 
 import os
-from typing import Callable, Iterable, Mapping, Optional, Sequence, Union
 
 import gin
 import numpy as np
@@ -24,7 +23,6 @@ import seqio
 import tensorflow as tf
 import tensorflow_datasets as tfds
 import typing_extensions
-
 from dedal.data import serialization
 
 

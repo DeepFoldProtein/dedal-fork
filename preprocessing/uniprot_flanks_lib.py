@@ -17,16 +17,11 @@
 
 import functools
 import random
-from typing import Callable, Dict, Iterator, List
 
 import apache_beam as beam
-from apache_beam import pvalue
 import numpy as np
-
-from dedal.preprocessing import schemas
-from dedal.preprocessing import schemas_lib
-from dedal.preprocessing import tasks_lib
-from dedal.preprocessing import types
+from apache_beam import pvalue
+from dedal.preprocessing import schemas, schemas_lib, tasks_lib, types
 
 
 # Type aliases

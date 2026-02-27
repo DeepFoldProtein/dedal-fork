@@ -21,9 +21,7 @@ import functools
 from typing import ClassVar
 
 import apache_beam as beam
-
-from dedal.preprocessing import types
-from dedal.preprocessing import utils
+from dedal.preprocessing import types, utils
 
 
 # Type aliases

@@ -17,15 +17,14 @@
 
 import abc
 import functools
-from typing import Any, Callable, Mapping, Optional, Sequence, Tuple, Union
+from typing import Mapping, Optional, Sequence, Tuple, Union
 
-from absl import logging
 import gin
 import tensorflow as tf
 import tensorflow_datasets as tfds
-
+from absl import logging
 from dedal import multi_task
-from dedal.data import transforms
+
 
 MultiTaskTensor = multi_task.Backbone[tf.Tensor]
 MultiTaskOptionalTensor = multi_task.Backbone[Optional[tf.Tensor]]

@@ -18,7 +18,6 @@
 import gin
 import numpy as np
 import tensorflow as tf
-
 from dedal import vocabulary
 from dedal.data import transforms
 

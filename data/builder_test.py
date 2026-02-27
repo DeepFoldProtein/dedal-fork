@@ -20,11 +20,8 @@ from unittest import mock
 
 import gin
 import tensorflow as tf
-
-from dedal import multi_task
-from dedal import vocabulary
-from dedal.data import builder
-from dedal.data import loaders
+from dedal import multi_task, vocabulary
+from dedal.data import builder, loaders
 
 
 GIN_CONFIG = """
